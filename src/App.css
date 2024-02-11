@@ -28,6 +28,191 @@
   color: #61dafb;
 }
 
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.weather-table th, .weather-table td {
+  padding: 8px;
+  text-align: center;
+  border: 0.5px solid #ddd
+}
+
+.weather-table th {
+  font-size: 14px;
+}
+
+.weather-table td {
+  font-size: 14px;
+}
+
+.header {
+  background-image: url('./assets//landingbackground.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  background-color:#a00e0b; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  margin-left: 10px;
+  font-size: large;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+}
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/src/assets/landingbackground.jpg');
+  height: 100vh;
+  padding-top: 15vh;
+  background-size: cover;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  
+}
+
+.login-button {
+  background-color:#452a3e; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+
+.main-text-title{
+  font-size: 100px;
+}
+
+.main-text-subtitle{
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.mobile-main-text-subtitle{
+  text-align: center;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+
+.mobile-main-text-title{
+  font-size: 50px;
+}
+
+.home-name-text{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.weather-gif{
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.github-link{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  line-height: 12px;
+  font-size: 12px;
+  margin-bottom: 10vb;
+}
+
+.home-screen{
+  height: 100vb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: 'center';
+  padding-top: 15vb;
+}
+
+.input{
+  width: 300px;
+  height: 20px;
+  
+  
+}
+
+.button-weather{
+  background-color:#452a3e; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10vb;
+}
+
+.main-screen-container{
+  height: 100vb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: 'center';
+}
+
+.back-button {
+  background-color:#452a3e; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 100px;
+}
+
+.invalid-input{
+  height: 10px;
+}
+
+.profile-picture{
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

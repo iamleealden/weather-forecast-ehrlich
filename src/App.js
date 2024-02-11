@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import MainScreen from "./screens/MainScreen";
+import LoginScreen from "./screens/LoginScreen";
+import HomeScreen from "./screens/HomeScreen";
+import { useAuth0 } from "@auth0/auth0-react";
+import Header from "./components/Header";
 
 function App() {
+  const { isAuthenticated } = useAuth0();
+
+  console.log(isAuthenticated);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isAuthenticated && <Header />}
+      <Routes>
+        <Route path="/" element={<LoginScreen />} />
+        <Route path="/home" element={<HomeScreen />} />
+        <Route path="/weather" element={<MainScreen />} />
+      </Routes>
     </div>
   );
 }
