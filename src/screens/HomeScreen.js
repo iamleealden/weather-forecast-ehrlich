@@ -20,14 +20,12 @@ const HomeScreen = () => {
     void (async () => {
       if (isAuthenticated && user) {
         try {
-          console.log("username: ", user.nickname);
           const response = await fetch(
             `https://api.github.com/users/${user.nickname}`
           );
           const userData = await response.json();
           setGitHubLink(userData.html_url);
         } catch (error) {
-          console.log("error: ", error);
           setGitHubLink(null);
         }
       }
@@ -52,7 +50,6 @@ const HomeScreen = () => {
       )
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
           navigate("/weather", {
             state: { data: data, date: `${month}/${day}/${year}` },
           });

@@ -9,7 +9,6 @@ import Header from "./components/Header";
 function App() {
   const { isAuthenticated } = useAuth0();
 
-  console.log(isAuthenticated);
   return (
     <div>
       {isAuthenticated && <Header />}
